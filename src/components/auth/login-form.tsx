@@ -3,6 +3,8 @@ import { LoginSchema } from "@/schemas";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
+import { FormError } from "../form-error";
+import { FormSuccess } from "../form-success";
 import { Button } from "../ui/button";
 import {
   Form,
@@ -66,6 +68,8 @@ export function LoginForm() {
               )}
             />
           </div>
+          <FormError />
+          <FormSuccess />
           <Button type="submit" className="w-full">
             Login
           </Button>
