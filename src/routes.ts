@@ -1,7 +1,7 @@
 /**
  * An array of public routes that don't need authentication
  */
-export const publicRoutes: Readonly<string[]> = ["/"];
+export const publicRoutes: Readonly<string[]> = ["/", "/auth/new-verification"];
 
 /**
  * An array of public routes that don't need authentication
